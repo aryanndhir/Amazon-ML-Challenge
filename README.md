@@ -38,16 +38,14 @@ For each PRODUCT_ID in the test data set, you are required to provide a browse n
 
 2. Replaced all the null values with an empty string
 
-3. Dropped Bullet Points and Brand columns
+3. Dropped Bullet Points, Brand and Description columns
 
 4. Created a Bar Graph to see the correlation amongst all the features
 
-5. Used Electra Tokenizer to convert Title and Description Column and padded the data to 128 length
+5. Removed punctuations from the data
 
-6. Tokenized data was padded to 128 max-length.
+6. Used TfidVectorizer on the Title Column
 
-7. Chose learning rate: 1e-5, warmup ratio: 0.1 and weight decay: 0.01
+7. Used Logistic Regression as the model
 
-8. Used Logistic Regression as the model
-
-9. Finally got an accuracy of 53.95
+8. Finally got an accuracy of 53.95
