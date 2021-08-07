@@ -31,3 +31,23 @@ This contest uses Accuracy as the evaluation metric to measure submissions quali
 ### Submission File
 
 For each PRODUCT_ID in the test data set, you are required to provide a browse node id prediction. The submission file should be a csv and contain a header followed by pairs of PRODUCT_ID, BROWSE_NODE_ID.
+
+### Approach
+
+1. Used Label Encoder to create Label column
+
+2. Replaced all the null values with an empty string
+
+3. Dropped Bullet Points and Brand columns
+
+4. Created a Bar Graph to see the correlation amongst all the features
+
+5. Used Electra Tokenizer to convert Title and Description Column and padded the data to 128 length
+
+6. Tokenized data was padded to 128 max-length.
+
+7. Chose learning rate: 1e-5, warmup ratio: 0.1 and weight decay: 0.01
+
+8. Used Logistic Regression as the model
+
+9. Finally got an accuracy of 53.95
